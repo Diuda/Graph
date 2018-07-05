@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PieComponent } from './pie/pie.component';
 
+import * as d3 from 'd3';
+
 const appRoutes: Routes = [
   { path: 'pie', component: PieComponent}
 ]
@@ -14,9 +16,11 @@ const appRoutes: Routes = [
     AppComponent,
     PieComponent
   ],
+  exports: [
+  ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
