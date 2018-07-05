@@ -36,11 +36,21 @@ export class PieComponent implements OnInit {
         .outerRadius(radius - 40)
         .innerRadius(radius - 40);
 
-    d3.csv("data.csv", function(d) {
+    // console.log(""+__dirname)
+
+    d3.csv("/assets/data.csv")
+    .then((data)=>{
+        console.log(data)
+    })
+
+    d3.csv("/assets/data.csv").then(function(d) {
+        console.log(d)
       d.population = +d.population;
       return d;
-    }, function(error, data) {
-      if (error) throw error;
+    }).then( function(data) {
+        console.log(typeof(data))
+        // console.log(error)
+    //   if (error) throw error;
 
       let arc = g.selectAll(".arc")
         .data(pie(data))
