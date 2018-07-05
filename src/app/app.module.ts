@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { PieComponent } from './pie/pie.component';
+
+const appRoutes: Routes = [
+  { path: 'pie', component: PieComponent}
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PieComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
