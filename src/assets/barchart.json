@@ -1,0 +1,41 @@
+[{
+    "letter":"A",
+    "frequency":".81"
+},
+{
+    "letter":"B",
+    "frequency":".14"
+},
+{
+    "letter":"C",
+    "frequency":"27"
+},
+{
+    "letter":"D",
+    "frequency":"42"
+},
+{
+    "letter":"E",
+    "frequency":"127"
+},
+{
+    "letter":"F",
+    "frequency":"22"
+},
+{
+    "letter":"G",
+    "frequency":"20"
+},
+{
+    "letter":"H",
+    "frequency":"60"
+},
+{
+    "letter":"I",
+    "frequency":"69"
+},
+{
+    "letter":"J",
+    "frequency":"153"
+}
+]

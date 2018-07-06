@@ -1,0 +1,15 @@
+.bar {
+    fill:turquoise;
+  }
+  
+  .bar:hover {
+    fill:burlywood;
+  }
+  
+  .axis--x path {
+    display: none;
+  }
+  .svg
+  {
+    text-align: center;
+  }
